@@ -27,7 +27,7 @@ wss.on("connection",(socket)=>{
             let currentUserRoom = null;
             for(let i=0;i<allSockets.length;i++){
                 if(allSockets[i].socket == socket){
-                    currentUserRoom = allSockets[i].socket;
+                    currentUserRoom = allSockets[i].room;
                 }
             }
          
